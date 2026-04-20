@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # 将函数名改回网页程序调用的名称：calculate_medic_repurchase
-def calculate_medic_repurchase(file_path):
+def calculate_repurchase_rate(file_path):
     """
     计算复购率（适配网页调用名）。
     输入：Excel 文件路径
