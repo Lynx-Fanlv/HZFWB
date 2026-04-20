@@ -72,10 +72,10 @@ def calculate_repurchase_rate(file_path):
 if __name__ == "__main__":
     # 验证时请确保路径正确
     input_file = r'C:\Users\yym\Desktop\matlabFOR_fg\data1.xlsx'
-    output_file = r'C:\Users\yym\Desktop\matlabFOR_fg\验证_复购率_Store版.xlsx'
+    output_file = r'C:\Users\yym\Desktop\matlabFOR_fg\复购率.xlsx'
     
     print("正在开始复购率本地验证...")
     # 这里也同步修改调用名
-    final_df = calculate_medic_repurchase(input_file)
+    final_df = calculate_repurchase_rate(input_file)
     final_df.to_excel(output_file, index=False)
     print(f"本地验证成功！结果已保存至: {output_file}")
